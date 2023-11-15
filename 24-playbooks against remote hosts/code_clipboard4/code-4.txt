@@ -1,0 +1,3 @@
+# Replace the password with the <Public IP Address>
+# with the Linux Instance or VM IP Address
+ansible-playbook ping.yml -i <Public IP Address>,

@@ -1,0 +1,2 @@
+mv ~/Downloads/ChocolateyInstall.ps1 roles/chocolatey/files
+mv ~/Downloads/chocolatey-core.extension.x.x.x.x.nupkg roles/chocolatey/files

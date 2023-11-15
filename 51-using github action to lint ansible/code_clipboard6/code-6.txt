@@ -1,0 +1,5 @@
+# copy the code from the /usercode directory to the /ansible directory
+cp -rT /usercode /ansible
+
+# Change into ansible directory
+cd /ansible

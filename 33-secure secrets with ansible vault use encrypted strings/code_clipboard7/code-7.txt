@@ -1,0 +1,12 @@
+# Encrypt ansible password
+echo -n '<Password>' | ansible-vault encrypt_string --stdin-name 'ansible_password'
+# OR
+ansible-vault encrypt_string --stdin-name 'ansible_password'
+
+## Replace the ansible password in linux.yml and windows.yml files.
+
+# Verify variables
+ansible-inventory -i hosts --list --ask-vault-pass
+
+# Decrypt ansible_password
+ansible all -i hosts -m debug -a "var=ansible_password" --ask-vault-pass

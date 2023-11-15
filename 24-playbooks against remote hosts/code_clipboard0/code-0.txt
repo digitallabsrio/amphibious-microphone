@@ -1,0 +1,2 @@
+ansible all -i <Public Ip Address>, -m ping \
+-e "ansible_user=ansible ansible_password=<Password> ansible_ssh_common_args='-o StrictHostKeyChecking=no'"

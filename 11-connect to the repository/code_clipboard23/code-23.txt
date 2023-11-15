@@ -1,0 +1,1 @@
+ git commit ansible.sh -m 'added localhost commands'

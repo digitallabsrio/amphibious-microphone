@@ -1,0 +1,3 @@
+# Replace the <LinuxHostDNSname> with the actual domain name
+# Replace the <Public IP Address> with the actual hosts IP Address
+echo "ip: <Public IP address>" > <LinuxHostDNSname>.yml

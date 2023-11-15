@@ -1,0 +1,2 @@
+# Replace the public IP Address by the Windows Host IP
+ansible-playbook configure_iis_web_server.yml -i <Public Ip Address>,

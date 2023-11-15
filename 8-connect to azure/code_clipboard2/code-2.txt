@@ -1,0 +1,6 @@
+# Sign in to Azure
+# Replace <username> and <password> with your actual username and password
+az login -u <username> -p <password>
+
+# Or to sign in interactively
+az login

@@ -1,0 +1,1 @@
+ pwsh -c '((ansible-inventory -i ./hosts_aws_ec2.yml --list | ConvertFrom- Json)._meta.hostvars).psobject.properties | % {$_.value.tags}'

@@ -1,0 +1,2 @@
+# Replace the <ServicePrincipalName> with a name of your own choice
+az ad sp create-for-rbac --name ServicePrincipalName

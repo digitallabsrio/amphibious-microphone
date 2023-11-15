@@ -1,0 +1,4 @@
+The authenticity of host '<Public IP Address>' can't be established.
+ECDSA key fingerprint is SHA256:g8b7ejFQ2eaQSJ7bNl4KDdKx66TbLP5IC7dhXpLwjig. 
+ECDSA key fingerprint is MD5:38:f0:6e:03:6e:f8:c7:12:ec:3e:ac:b3:41:63:d1:56. 
+Are you sure you want to continue connecting (yes/no)?

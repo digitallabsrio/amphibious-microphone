@@ -1,0 +1,2 @@
+# Replace the <WindowsHostDNSname> with the Windows host DNS name.
+ansible-playbook win_ping_novars.yml -i hosts --limit <WindowsHostDNSname>

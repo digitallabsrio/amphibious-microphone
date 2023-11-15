@@ -1,0 +1,19 @@
+---
+- hosts: webservers 
+        tasks:
+        - name: deploy code to webservers 
+                deployment:
+                        path: {{ filepath }}
+                        state: present
+- hosts: dbserver
+        tasks:
+        - name: update database schema 
+          updatedbschema:
+                host: {{ dbhost }}
+                state: present
+- hosts: webservers
+        tasks:
+        - name: check app status page 
+                deployment:
+                        statuspathurl: {{ url }}
+                        state: present

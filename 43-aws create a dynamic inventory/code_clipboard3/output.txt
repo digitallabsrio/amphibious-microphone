@@ -1,0 +1,15 @@
+[WARNING]: Could not match supplied host pattern, ignoring: linux
+
+PLAY [linux]
+**************************************************************************************
+skipping: no hosts matched
+
+[WARNING]: Could not match supplied host pattern, ignoring: windows
+
+PLAY [windows]
+**************************************************************************************
+
+skipping: no hosts matched
+
+PLAY RECAP
+**************************************************************************************

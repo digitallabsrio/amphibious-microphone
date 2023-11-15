@@ -1,0 +1,29 @@
+# Replace the <GitHub clone URL> with the repository's URL.
+git clone <Github clone URL>
+
+# Configure user.email
+# Replace <Your email> with the actual email
+git config --global user.email "<YourEmail>"
+
+# Configure user.name
+# Replace <Your name> with the actual name
+git config --global user.name "<YourName>"
+
+# copy the code from the /usercode directory to the /ansible directory
+cp -rT /usercode /ansible
+
+# Change into ansible directory
+cd /ansible
+
+## Update the <Password> with the password created using the ansible-vault 
+## command in the group_vars/linux.yml and group_vars/windows.yml files 
+## using the nano editor.
+
+# Stage the changes
+git add .
+
+# Commit the changes
+git commit -m 'added ansible lint action' 
+
+# push the committed changes
+git push

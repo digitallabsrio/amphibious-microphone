@@ -1,0 +1,1 @@
+cp nonGalaxy/chocolatey/files/* ../chocolatey/files/

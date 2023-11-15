@@ -1,0 +1,1 @@
+ansible-lint configure_nginx_web_server.yml -x package-latest

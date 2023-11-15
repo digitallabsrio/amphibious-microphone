@@ -1,0 +1,34 @@
+# Review the hosts file
+cat hosts
+
+# Create the host_vars directory
+mkdir host_vars
+
+# Change into host_vars directory
+cd host_vars
+
+# Replace the <LinuxHostDNSname> with the actual domain name
+touch <LinuxHostDNSname>.yml
+
+# Replace the <LinuxHostDNSname> with the actual domain name
+# Replace the <Public IP Address> with the actual hosts IP Address
+echo "ip: <Public IP address>" > <LinuxHostDNSname>.yml
+
+# Replace the <WindowsHostDNSname> with the actual domain name
+touch <WindowsHostDNSname>.yml
+
+# Replace the <WindowsHostDNSname> with the actual domain name
+# Replace the <Public IP Address> with the actual hosts IP Address
+echo "ip: <Public IP address>" > <WindowsHostDNSname>.yml
+
+# Change into the parent directory
+cd ..
+
+# Directory structure
+tree
+
+# ansible all -i hosts -m debug -a "var=ip"
+ansible all -i hosts -m debug -a "var=ip"
+
+# List the hosts and the variables
+ansible-inventory -i hosts --list

@@ -1,0 +1,1 @@
+ansible-inventory -i hosts_aws_ec2.yml --list

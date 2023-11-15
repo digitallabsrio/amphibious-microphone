@@ -1,0 +1,6 @@
+@all:
+|--@_linux:
+| |--vm-linuxweb
+|--@_windows:
+| |--vm-winweb01 
+|--@ungrouped:

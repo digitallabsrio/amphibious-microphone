@@ -1,0 +1,2 @@
+# replace <DockerHub-UserName> with your actual username.
+docker login --username <DockerHub-UserName>

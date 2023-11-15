@@ -1,0 +1,4 @@
+ansible-playbook site.yml -i hosts --ask-vault-pass
+
+# skip chocolateyExtension tasks
+ansible-playbook site.yml -i hosts --skip-tags chocolateyExtension --ask-vault-pass

@@ -1,0 +1,4 @@
+ #Linux ec2 instance
+ansible-inventory -i hosts_aws_ec2.yml --list | jq .'_meta.hostvars."<LinuxHost>>".tags'
+#Windows ec2 instance
+ansible-inventory -i hosts_aws_ec2.yml --list | jq .'<WindowsHost".tags'

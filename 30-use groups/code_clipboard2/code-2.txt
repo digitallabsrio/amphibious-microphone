@@ -1,0 +1,4 @@
+[linux] 
+# Replace the example DNS names with the actual ones
+vm-linuxweb001.eastus.cloudapp.azure.com 
+ec2-54-211-23-17.compute-1.amazonaws.com

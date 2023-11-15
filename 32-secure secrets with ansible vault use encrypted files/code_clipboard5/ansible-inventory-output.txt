@@ -1,0 +1,26 @@
+"hostvars": {
+    "ec2-50-17-205-144.compute-1.amazonaws.com": {
+        "ansible_connection": "winrm", "
+        ansible_password": "<Password>", 
+        "ansible_user": "ansible", 
+        "ansible_winrm_server_cert_validation": "ignore"
+    }, 
+    "ec2-52-21-98-94.compute-1.amazonaws.com": {
+        "ansible_password": "<Password>", 
+        "ansible_ssh_common_args": "-o StrictHostKeyChecking=no", 
+        "ansible_user": "ansible"
+    }, 
+    "vm-linuxweb001.eastus.cloudapp.azure.com": {
+        "ansible_password": "<Password>", 
+        "ansible_ssh_common_args": "-o StrictHostKeyChecking=no", 
+        "ansible_user": "ansible",
+        "ip": "13.68.153.159"
+    }, 
+    "vm-winweb001.eastus.cloudapp.azure.com": {
+        "ansible_connection": "winrm", 
+        "ansible_password": "<Password>",
+        "ansible_user": "ansible", 
+        "ansible_winrm_server_cert_validation": "ignore", 
+        "ip": "13.90.39.99"
+    } 
+}

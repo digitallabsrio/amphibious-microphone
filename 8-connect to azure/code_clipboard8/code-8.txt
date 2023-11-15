@@ -1,0 +1,5 @@
+# echo variables and save them for later use.
+echo $AZURE_SUBSCRIPTION_ID
+echo $AZURE_CLIENT_ID
+echo $AZURE_SECRET
+echo $AZURE_TENANT

@@ -1,0 +1,1 @@
+pwsh -c '((ansible-inventory -i ./hosts_azure_rm.yml --list | ConvertFrom- Json)._meta.hostvars).psobject.properties | % {$_.value.os_profile.system}'

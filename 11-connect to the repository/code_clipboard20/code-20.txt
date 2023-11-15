@@ -1,0 +1,2 @@
+# Replace <YourEmail> with the actual email
+git config --global user.email "<YourEmail>"

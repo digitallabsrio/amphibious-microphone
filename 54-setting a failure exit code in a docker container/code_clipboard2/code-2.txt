@@ -1,0 +1,7 @@
+# Upload the Image to DockerHub
+# replace <DockerHub-UserName> with your actual username.
+docker login --username <DockerHub-UserName>
+
+# Add a repository name to the tag
+# Replace the <Cloud-Provider> with the either AWS, Azure or Multi-Cloud
+docker build -t <DockerHub-UserName>/ansible:latest .github/actions/ansible/Dockerfiles/<Cloud-Provider>/Dockerfile

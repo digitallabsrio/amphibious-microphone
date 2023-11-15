@@ -1,0 +1,1 @@
+mv roles/chocolatey/* nonGalaxy/chocolatey

@@ -1,0 +1,4 @@
+- name: Create logs directory 
+  win_file:
+    path: c:\logs
+    state: directory

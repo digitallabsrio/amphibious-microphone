@@ -1,0 +1,2 @@
+# Replace <YourName> with the actual name
+git config --global user.name "<YourName>"

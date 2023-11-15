@@ -1,0 +1,2 @@
+# Replace the public IP Address by the Windows Host IP
+curl <Public Ip Address>

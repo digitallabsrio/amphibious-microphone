@@ -1,0 +1,11 @@
+localhost | SUCCESS => {
+         "changed": false,
+         "gid": 0,
+         "group": "root",
+         "mode": "0755",
+         "owner": "root",
+         "path": "/ansible",
+         "size": 192,
+         "state": "directory",
+         "uid": 0
+}

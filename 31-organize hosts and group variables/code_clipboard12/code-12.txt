@@ -1,0 +1,7 @@
+|-- group_vars
+| |-- linux
+| |-- windows
+|-- host_vars
+| |-- LinuxHostDNSname.yml
+| |-- WindowsHostDNSname.yml
+|-- hosts

@@ -1,0 +1,5 @@
+# replace <Access Key> with your access key Id
+export AWS_ACCESS_KEY_ID='<Access Key>'
+
+# replace <Secret Access Key> with your secret access key
+export AWS_SECRET_ACCESS_KEY='<Secret Access Key>'

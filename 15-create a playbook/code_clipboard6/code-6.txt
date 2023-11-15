@@ -1,0 +1,3 @@
+asks:
+- name: run ping
+  ping:

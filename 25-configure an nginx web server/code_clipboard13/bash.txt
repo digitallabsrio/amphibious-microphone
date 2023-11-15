@@ -1,0 +1,4 @@
+# Replace <Public Ip Address> with remote Linux host IP Address
+
+# Bash
+curl <Public Ip Address>

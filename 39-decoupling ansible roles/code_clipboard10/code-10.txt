@@ -1,0 +1,1 @@
+cp nonGalaxy/chocolatey/tasks/main.yml ../chocolatey/tasks/main.yml

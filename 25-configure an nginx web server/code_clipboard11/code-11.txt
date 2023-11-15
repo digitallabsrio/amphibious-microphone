@@ -1,0 +1,11 @@
+- name: copy index.html 
+  copy:
+    src: index.html
+    dest: /usr/share/nginx/html/index.html 
+  become: yes
+
+- name: start nginx service 
+  service:
+    name: nginx
+      state: started
+  become: yes

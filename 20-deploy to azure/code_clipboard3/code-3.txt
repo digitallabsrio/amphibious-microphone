@@ -1,0 +1,1 @@
+ansible-playbook azure_delete_ansible_env.yaml

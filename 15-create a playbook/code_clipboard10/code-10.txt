@@ -1,0 +1,6 @@
+TASK [run ping]
+[WARNING]: Platform linux on host python-container is using the discovered Python interpreter at
+/usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [python-container] 

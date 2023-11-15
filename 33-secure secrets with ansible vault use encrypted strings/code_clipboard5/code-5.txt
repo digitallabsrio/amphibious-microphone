@@ -1,0 +1,1 @@
+ansible all -i hosts -m debug -a "var=ansible_password" --ask-vault-pass

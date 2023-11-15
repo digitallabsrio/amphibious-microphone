@@ -1,0 +1,7 @@
+---
+- hosts: localhost 1
+  tasks: 2
+  - name: create a directory 3
+    file:
+      path: /ansible/playbooks
+      state: directory

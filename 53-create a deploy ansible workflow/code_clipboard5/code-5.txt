@@ -1,0 +1,14 @@
+# Configure user.email
+# Replace <Your email> with the actual email
+git config --global user.email "<YourEmail>"
+
+# Configure user.name
+# Replace <Your name> with the actual name
+git config --global user.name "<YourName>"
+
+git add .
+
+git commit -m 'added secret env vars to deploy job'
+
+# push the committed changes
+git push

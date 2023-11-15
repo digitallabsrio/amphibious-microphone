@@ -1,0 +1,9 @@
+# In case of wrong password
+PLAY [all] *********************************************************************************************
+
+TASK [run win_ping] ************************************************************************************
+fatal: [Public IP Address]: UNREACHABLE! => 
+{"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+
+PLAY RECAP *********************************************************************************************
+Public IP Address           : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0  

@@ -1,0 +1,6 @@
+diff --git a/ansible.sh b/ansible.sh index 75c6cb5..73a8a9a 100644
+--- a/ansible.sh
++++ b/ansible.sh
+@@ -1 +1,2 @@
+ansible localhost -m ping
++ansible localhost -m file -a "path=ansible.txt state=touch"

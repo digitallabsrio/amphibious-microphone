@@ -1,0 +1,2 @@
+- extracting chocolatey to /root/.ansible/roles/chocolatey 
+- chocolatey (v1.0) was installed successfully

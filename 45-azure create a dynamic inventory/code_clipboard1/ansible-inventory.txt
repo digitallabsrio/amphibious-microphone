@@ -1,0 +1,1 @@
+ansible-inventory -i hosts_azure_rm.yml --graph

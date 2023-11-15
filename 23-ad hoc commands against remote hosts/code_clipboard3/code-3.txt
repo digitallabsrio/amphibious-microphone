@@ -1,0 +1,3 @@
+# Replace the <Public Ip Address> with the actual 
+# Linux instance or VM IP Address
+ansible all -i <Public Ip Address>, -m ping -e "ansible_ssh_common_args='-o StrictHostKeyChecking=no'"

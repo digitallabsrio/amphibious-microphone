@@ -1,0 +1,1 @@
+ansible localhost -m replace -a "path=/ansible/to-dos.md regexp='^\[\s' replace='[x'"

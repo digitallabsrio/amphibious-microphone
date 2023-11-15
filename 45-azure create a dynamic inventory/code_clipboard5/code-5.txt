@@ -1,0 +1,1 @@
+windows: "'WindowsServer' in image.offer

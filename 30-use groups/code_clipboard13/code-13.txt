@@ -1,0 +1,1 @@
+ansible-playbook ping_novars_updated.yml -i hosts

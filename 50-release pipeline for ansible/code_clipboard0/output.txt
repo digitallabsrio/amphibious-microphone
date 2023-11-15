@@ -1,0 +1,5 @@
+package-latest: Package installs should not use latest 
+configure_nginx_web_server.yml: 9 Task/Handler: install nginx
+
+risky-file-permissions: File permissions unset or incorrect
+configure_nginx_web_server.yml:16 Task/Handler: copy index.html

@@ -1,0 +1,7 @@
+---
+- hosts: all 
+  vars_prompt:
+    - name: user
+    prompt: "Enter ssh user"
+    - name: password
+    prompt: "Enter password for ssh user"

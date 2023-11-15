@@ -1,0 +1,7 @@
+{
+  “appId”: “<App-ID>”,
+  “displayName”: “<ServicePrincipalName>”,
+  “name”: “http://<ServicePrincipalName>”,
+  “password”: “<Password>,
+  “tenant”: “<Tenant-ID>"
+}

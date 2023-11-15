@@ -1,0 +1,7 @@
+|-- roles/
+| |-- chocolatey/
+| | |-- files/
+| | | |-- ChocolateyInstall.ps1
+| | | |-- chocolatey-core.extension.x.x.x.x.nupkg 
+| | |-- tasks/
+| | | |-- main.yml

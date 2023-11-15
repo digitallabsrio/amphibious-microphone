@@ -1,0 +1,10 @@
+# Replace the <GitHub clone URL> with the repository's URL.
+git clone <Github clone URL>
+
+# Configure user.email
+# Replace <Your email> with the actual email
+git config --global user.email "<YourEmail>"
+
+# Configure user.name
+# Replace <Your name> with the actual name
+git config --global user.name "<YourName>"

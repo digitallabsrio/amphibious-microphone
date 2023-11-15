@@ -1,0 +1,5 @@
+# Replace the password with the actual password
+[linux:vars]
+ansible_user=ansible
+ansible_password=<Password> 
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'

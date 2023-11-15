@@ -1,0 +1,116 @@
+# initialize the role directory
+ansible-galaxy init chocolatey --offline
+
+# View the directory structure
+tree
+
+# Change into chocolatey directory
+cd chocolatey
+
+# Connect Ansible Galaxy Role repository
+git init
+
+# Configure user.email
+# Replace <Your email> with the actual email
+git config --global user.email "<YourEmail>"
+
+# Configure user.name
+# Replace <Your name> with the actual name
+git config --global user.name "<YourName>"
+
+git add .
+
+git commit -m "init commit"
+
+# Replace <remoteRepositoryURL> with the 
+# HTTPS URL of GitHub chocolatey repository.
+git remote add origin <remoteRepositoryURL>
+
+# Verify Connectivity
+git remote -v
+
+# Push the changes
+git push -u origin master
+
+# End - Connect Ansible Galaxy Role repository
+
+# Change to the ansible directory
+cd ../ansible
+
+# Create nonGalaxy/chocolatey directory
+mkdir -p nonGalaxy/chocolatey
+
+# Move the contents of roles/chocolatey to nonGalaxy/chocolatey
+mv roles/chocolatey/* nonGalaxy/chocolatey
+
+# Remove the roles/chocolatey directory
+rm -rf roles/chocolatey
+
+# Copy the tasks
+cp nonGalaxy/chocolatey/tasks/main.yml ../chocolatey/tasks/main.yml
+
+# Copy the files
+cp nonGalaxy/chocolatey/files/* ../chocolatey/files/
+
+#change to the galaxy role directory  
+cd ../chocolatey
+
+git add .
+
+git commit -m 'added role logic and files' 
+
+git push
+
+# Change directory
+cd ../ansible
+
+# Execute the playbook
+ansible-playbook site.yml -i hosts --ask-vault-pass
+
+
+# Create requirements.yml
+touch roles/requirements.yml
+
+# Add Content
+nano roles/requirements.yml
+
+# Contents
+# - src: https://github.com/Duffney/chocolatey.git 
+#  scm: git
+#  version: "master"
+#  name: chocolatey
+
+# Save Changes
+Press Ctrl + o
+Press enter
+
+# Install Role
+ansible-galaxy install -r roles/requirements.yml
+
+# Execute the playbook
+ansible-playbook site.yml -i hosts --ask-vault-pass
+
+# skip chocolateyExtension tasks
+ansible-playbook site.yml -i hosts --skip-tags chocolateyExtension --ask-vault-pass
+
+# Update Content
+nano roles/requirements.yml
+
+# Updated Contents
+# - src: https://github.com/Duffney/chocolatey.git 
+#  scm: git
+#  version: "v1.0"
+#  name: chocolatey
+
+# Save Changes
+Press Ctrl + o
+Press enter
+
+# Re-Install Role
+ansible-galaxy install -r roles/requirements.yml -f
+
+# Execute the playbook
+ansible-playbook site.yml -i hosts --ask-vault-pass
+
+# skip chocolateyExtension tasks
+ansible-playbook site.yml -i hosts --skip-tags chocolateyExtension --ask-vault-pass

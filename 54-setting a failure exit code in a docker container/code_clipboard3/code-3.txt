@@ -1,0 +1,2 @@
+# replace <DockerHub-UserName> with your actual username.
+docker push <DockerHub-UserName>/ansible:latest

@@ -1,0 +1,2 @@
+# Replace the <WindowsHostDNSname> with the actual domain name
+touch <WindowsHostDNSname>.yml

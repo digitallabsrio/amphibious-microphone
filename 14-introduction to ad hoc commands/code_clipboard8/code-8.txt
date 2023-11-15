@@ -1,0 +1,1 @@
+ansible localhost -m debug -a "msg={{lookup('file', '/ansible/to-dos.md') }}"

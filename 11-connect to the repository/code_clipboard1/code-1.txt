@@ -1,0 +1,2 @@
+# Change into the ansible directory
+cd ansible

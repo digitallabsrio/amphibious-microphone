@@ -1,0 +1,3 @@
+# Replace the <Public Ip Address> with the IP of Azure virtual machine
+# or AWS EC2 instance for Windows
+ansible-playbook ping.yaml -i <Public Ip Address>,

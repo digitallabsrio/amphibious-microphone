@@ -1,0 +1,2 @@
+# Replace the <GitHub clone URL> with the repository's URL.
+git clone <Github clone URL>

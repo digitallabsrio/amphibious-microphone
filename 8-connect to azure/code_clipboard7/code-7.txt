@@ -1,0 +1,19 @@
+# Azure Subscription Id
+ subscriptionid=$(az account show --query id --output tsv)
+
+# Azure Client Id
+# Replace <appId> with the actual App Id
+clientid=<appId>
+
+# Azure Secret. 
+# Replace <Password> with the auto-generated password for service principal.
+secret=<password>
+
+# Azure Tenant Id
+# Replace <tenant> with the actual tenant Id
+tenantid=<tenant>
+
+export AZURE_SUBSCRIPTION_ID=$subscriptionid; 
+export AZURE_CLIENT_ID=$clientid;
+export AZURE_SECRET=$secret;
+export AZURE_TENANT=$tenantid;

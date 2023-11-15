@@ -1,0 +1,10 @@
+- name: copy ChocolateyInstall.ps1
+  win_copy:
+    src: ChocolateyInstall.ps1
+    dest: "{{ temp_location + '\\ChocolateyInstall.ps1' }}"
+
+- name: install chocolatey 
+  win_chocolatey:
+    name: chocolatey
+    state: present
+    source: "{{ temp_location + '\\ChocolateyInstall.ps1' }}"

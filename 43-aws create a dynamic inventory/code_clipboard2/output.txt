@@ -1,0 +1,5 @@
+@all:
+    |--@aws_ec2:
+    | |--ec2-3-231-170-254.compute-1.amazonaws.com 
+    | |--ec2-54-89-136-132.compute-1.amazonaws.com
+    |--@ungrouped:

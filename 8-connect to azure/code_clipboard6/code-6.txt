@@ -1,0 +1,2 @@
+# Replace the APP_ID with the output appId of the create-for-rbac command. 
+az role assignment list --assignee APP_ID

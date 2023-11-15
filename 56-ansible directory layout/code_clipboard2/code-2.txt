@@ -1,0 +1,38 @@
+|-- environments/ 
+| |
+| |-- 000_cross_env_vars
+| |
+| |--dev/
+| | |-- hosts
+| | |-- group_vars/
+| | | |-- all/
+| | | | |-- 000_cross_env_vars -> ../../../000_cross_env_vars 
+| | | | |-- env_specific
+| | | |-- linux.yml
+| | | |-- windows.yml
+| | |-- host_vars/
+| | | |-- linuxweb01.yml
+| | | |-- winweb01.yml
+| |
+production/
+| | |--hosts
+| | |--group_vars/
+| | | |-- all/
+| | | | |-- 000_cross_env_vars -> ../../../000_cross_env_vars 
+| | | | |-- env_specific
+| | | |-- linux.yml
+| | | |-- windows.yml
+| | |-- host_vars/
+| | | |-- linuxweb01.yml
+| | | |-- winweb01.yml
+
+
+|-- ping.yml
+|-- win_ping.yml
+|-- configure_nginx_web_server.yml
+|-- configure_iis_web_server.yml
+
+|-- roles/
+| |-- chocolatey/
+| |-- ngnix/
+| |-- iis/

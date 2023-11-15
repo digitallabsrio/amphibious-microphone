@@ -1,0 +1,1 @@
+ansible-playbook site.yml -i hosts_azure_rm.yml --ask-vault-pass

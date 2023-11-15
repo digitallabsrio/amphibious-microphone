@@ -1,0 +1,16 @@
+#change to the galaxy role directory  
+cd ../chocolatey
+
+git add .
+
+# Configure user.email
+# Replace <Your email> with the actual email
+git config --global user.email "<YourEmail>"
+
+# Configure user.name
+# Replace <Your name> with the actual name
+git config --global user.name "<YourName>"
+
+git commit -m 'added role logic and files' 
+
+git push

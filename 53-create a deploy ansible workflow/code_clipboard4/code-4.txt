@@ -1,0 +1,2 @@
+[WARNING]: Error in vault password file loading (default): Invalid vault password was provided from file (/github/workspace/.vault)
+ERROR! Invalid vault password was provided from file (/github/workspace/.vault)

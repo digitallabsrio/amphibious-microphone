@@ -1,0 +1,3 @@
+New Vault Password:
+Confirm New Vault Password:
+Reading plaintext input from stdin. (ctrl-d to end input, twice if your content does not already have a new line)

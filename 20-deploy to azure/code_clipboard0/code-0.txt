@@ -1,0 +1,1 @@
+ansible-playbook azure_create_resource_group.yaml

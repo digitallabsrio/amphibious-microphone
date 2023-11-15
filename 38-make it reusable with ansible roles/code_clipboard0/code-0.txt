@@ -1,0 +1,13 @@
+|-- roles/
+| |-- chocolatey/ 
+| | |-- tasks/
+| | | |-- main.yml 
+| | |-- handlers/
+| | | |-- main.yml
+| | |-- files/
+| | |-- templates/
+| | |-- vars/
+| | | |-- main.yml 
+| | |-- defaults/
+| | | |-- main.yml 
+| | |-- meta

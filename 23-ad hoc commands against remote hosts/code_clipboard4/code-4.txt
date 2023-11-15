@@ -1,0 +1,4 @@
+# Replace the <Public Ip Address> with the actual 
+# Linux instance or VM IP Address and 
+# <Password> with your actual password
+ansible all -i <Public Ip Address>, -m ping -e "ansible_user=ansible ansible_password=<Password> ansible_ssh_common_args='-o StrictHostKeyChecking=no'"

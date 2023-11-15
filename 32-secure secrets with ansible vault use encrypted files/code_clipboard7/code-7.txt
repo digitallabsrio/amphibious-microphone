@@ -1,0 +1,30 @@
+# Encrypt linux.yml
+ansible-vault encrypt group_vars/linux.yml
+
+# View encrypted contents
+cat group_vars/linux.yml
+
+# Edit linux.yml with Ansible vault
+ansible-vault edit group_vars/linux.yml
+
+# Encrypt windows.yml
+ansible-vault encrypt group_vars/windows.yml
+
+# View encrypted contents
+ansible-vault view group_vars/windows.yml
+
+# Verify the variables are loading
+ansible-inventory -i hosts --list --ask-vault-pass
+
+# execute the ping_novars.yml playbook
+ansible-playbook ping_novars.yml -i hosts --ask-vault-pass
+
+# execute the win_ping_novars.yml playbook
+ansible-playbook win_ping_novars.yml -i hosts --ask-vault-pass
+
+# Decrypt files
+#Linux
+ansible-vault decrypt group_vars/linux.yml
+
+# Windows
+ansible-vault decrypt group_vars/windows.yml

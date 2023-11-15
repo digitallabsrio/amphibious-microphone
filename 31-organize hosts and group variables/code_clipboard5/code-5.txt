@@ -1,0 +1,8 @@
+# Review the contents of hosts file
+cat hosts
+
+# ping
+ansible-playbook ping_novars.yml -i hosts
+
+# win ping
+ansible-playbook win_ping_novars.yml -i hosts

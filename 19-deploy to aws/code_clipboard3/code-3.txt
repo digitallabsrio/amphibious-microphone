@@ -1,0 +1,1 @@
+ansible-playbook aws_delete_ansible_env.yaml

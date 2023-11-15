@@ -1,0 +1,9 @@
+git init
+
+git add .
+
+git commit -m "init commit"
+
+# Replace <remoteRepositoryURL> with the 
+# HTTPS URL of GitHub chocolatey repository.
+git remote add origin <remoteRepositoryURL>

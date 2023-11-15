@@ -1,0 +1,8 @@
+# Stage the changes
+git add .
+
+# Commit the changes
+git commit -m 'added ansible lint action' 
+
+# push the committed changes
+git push

@@ -1,0 +1,5 @@
+# Linux VM hosts
+ansible-inventory -i hosts_azure_rm.yml --list | jq .'_meta.hostvars."<WindowsHost>".os_profile.system'
+
+# Windows VM hosts
+ansible-inventory -i hosts_azure_rm.yml --list | jq .'_meta.hostvars."<LinuxHost>".os_profile.system'

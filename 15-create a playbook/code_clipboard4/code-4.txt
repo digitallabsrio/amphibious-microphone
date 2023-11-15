@@ -1,0 +1,1 @@
+ansible all -i <Public Ip Address>, -m ping

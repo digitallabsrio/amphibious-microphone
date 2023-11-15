@@ -1,0 +1,7 @@
+<Public IP Address> | SUCCESS => { 
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}

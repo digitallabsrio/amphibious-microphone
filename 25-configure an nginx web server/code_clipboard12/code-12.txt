@@ -1,0 +1,2 @@
+# Replace <Public Ip Address> with remote Linux host IP Address
+ansible-playbook configure_nginx_web_server.yml -i <Public Ip Address>,
